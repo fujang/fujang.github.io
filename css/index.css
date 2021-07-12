@@ -1351,6 +1351,19 @@ body {
 input::placeholder {
   color: var(--font-color);
 }
+#web_bg {
+  position: fixed;
+  z-index: -999;
+  width: 100%;
+  height: 100%;
+  background: url(https://raw.githubusercontent.com/fujang233/Picture-bed/master/cropped-1920-1080-955208.png);
+  background-attachment: local;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 h1,
 h2,
 h3,
@@ -3252,7 +3265,6 @@ blockquote footer cite:before {
 #page-header {
   position: relative;
   width: 100%;
-  background-color: #49b1f5;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
