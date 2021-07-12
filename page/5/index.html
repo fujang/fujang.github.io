@@ -1,0 +1,421 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/5/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/5/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-07-12 23:58:25'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/style.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-filter-gitcalendar/lib/gitcalendar.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">69</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> Archives</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Timeline</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-bars"></i><span> Literature</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fa fa-tasks"></i><span> Anime</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> Archives</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Timeline</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-bars"></i><span> Literature</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fa fa-tasks"></i><span> Anime</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/04/26/JavaWeb%E2%80%94%E2%80%94EL%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="JavaWeb——EL表达式">     <img class="post_bg" src="https://static01.imgkr.com/temp/fdaff8f049c34ca5b9077317cbc3cc96.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaWeb——EL表达式"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/26/JavaWeb%E2%80%94%E2%80%94EL%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="JavaWeb——EL表达式">JavaWeb——EL表达式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-04-26T03:03:26.000Z" title="Created 2021-04-26 11:03:26">2021-04-26</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">一、EL表达式1. EL表达式基本概念
+EL表达式的全称是：Expression Language。是表达式语言。EL表达式主要是代替jsp页面中的表达式脚本在jsp页面中进行数据的输出。因为EL表达式在输出数据的时候，要比jsp的表达式脚本要简洁很多。
+
+
+
+
+EL表达式的格式是：$&#123;表达式&#125;，EL表达式在输出null值的时候，输出的是空串。jsp表达式脚本输出null值的时候，输出的是null字符串。
+
+2. EL表达式搜索域数据的顺序
+EL表达式主要是在jsp页面中输出数据。主要是输出域对象中的数据。当四个域中都有相同的key的数据的时候，EL表达式会按照四个域的从小到大的顺序去进行搜索，找到就输出。
+
+
+
+
+EL表达式输出Bean的普通属性，数组属性，List集合属性，map集合属性。
+输出一个类的属性，要求其有get方法。
+
+
+
+3. EL表达式运算
+语法：$&#123;运算表达式&#125; ，EL表达式支持如下运算符。
+
+
+
+
+
+
+
+
+empty运算：empty运算可以判断一个数据是否为空，如果为空，则输出true，不为空输出false。
+值为null ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/04/26/JavaWeb%E2%80%94%E2%80%94jsp/" title="JavaWeb——jsp">     <img class="post_bg" src="https://ae01.alicdn.com/kf/Ufb353c37b48a4cf4be425b1130c11452j.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaWeb——jsp"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/26/JavaWeb%E2%80%94%E2%80%94jsp/" title="JavaWeb——jsp">JavaWeb——jsp</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-04-25T17:54:19.000Z" title="Created 2021-04-26 01:54:19">2021-04-26</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">一、jsp1. jsp基础概念
+jsp的全称是java server pages。Java的服务器页面。
+jsp的主要作用是代替Servlet程序回传html页面。
+因为Servlet程序回传html页面数据是一件非常繁锁的事情。开发成本和维护成本都极高。
+Servlet回传html页面数据的代码如下。
+
+
+
+
+jsp回传一个简单的html页面的代码如下。
+
+
+
+
+jsp页面和html页面一样，都是存放在web目录下。访问也跟访问html页面一样。
+a.html页面访问地址是：http://ip:port/工程路径/a.html。
+b.jsp页面访问地址是：http://ip:port/工程路径/b.jsp。
+
+
+
+2. jsp的本质
+jsp页面本质上是一个Servlet程序。
+
+当我们第一次访问jsp页面的时候。Tomcat服务器会帮我们把jsp页面翻译成为一个java源文件。并且对它进行编译成为.class字节码程序。我们打开java源文件不难发现其里面的内容为如下。
+
+
+
+
+
+我们跟踪原代码发现，HttpJspBase类。它直接地继承了HttpServlet类。也就是说。jsp翻 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/04/26/Leetcode-competition-training-summary/" title="Leetcode competition training summary">     <img class="post_bg" src="https://ae01.alicdn.com/kf/Uf04443f0e4254337aef2a8fccd2255afU.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Leetcode competition training summary"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/26/Leetcode-competition-training-summary/" title="Leetcode competition training summary">Leetcode competition training summary</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">Sticky</span><span class="article-meta__separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-04-25T17:21:12.000Z" title="Created 2021-04-26 01:21:12">2021-04-26</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">Leetcode competition training summary1. 比赛记录表格
+
+
+Leetcode
+A
+B
+C
+D
+视频讲解
+
+
+
+第 238 场周赛
+✅
+💭
+✅
+💭
+link
+
+
+第 242 场周赛
+✅
+✅
+✅
+💭
+link
+
+
+第 243 场周赛
+✅
+✅
+✅
+💭
+link
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/04/25/JavaWeb%E2%80%94%E2%80%94Servlet/" title="JavaWeb——Servlet">     <img class="post_bg" src="https://ae01.alicdn.com/kf/Ub5dca2d491d5491a945feca22038ab111.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaWeb——Servlet"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/25/JavaWeb%E2%80%94%E2%80%94Servlet/" title="JavaWeb——Servlet">JavaWeb——Servlet</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-04-25T15:11:06.000Z" title="Created 2021-04-25 23:11:06">2021-04-25</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">一、Servlet1. Servlet接口基本概念与HttpServlet类
+Servlet是JavaEE规范之一。规范就是接口。Servlet就是JavaWeb三大组件之一。
+
+三大组件分别是：Servlet程序、Filter过滤器、Listener监听器。
+
+Servlet是运行在服务器上的一个java小程序，它可以接收客户端发送过来的请求，并响应数据给客户端。
+
+手动实现Servlet程序步骤：
+
+编写一个类去实现Servlet接口。
+实现service方法，处理请求，并响应数据。
+到web.xml中去配置servlet程序的访问地址。
+
+
+Servlet程序的示例代码如下。
+
+
+
+
+web.xml中的配置文件如下。
+
+
+
+
+Servlet的生命周期：
+
+执行Servlet构造器方法。
+执行init初始化方法。第一、二步，是在第一次访问的时候创建Servlet程序会调用。
+执行service方法。第三步，每次访问都会调用。
+执行destroy销毁方法第四步，在web工程停止的时候调用。
+
+
+GET和POST请求的分发处理如下。
+
+
+
+
+
+一般在实际项目开发中，都是使用继承Http ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/04/24/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/" title="归并排序">     <img class="post_bg" src="https://ae01.alicdn.com/kf/U5833806ab5e74ecc87bce0865a4e2139K.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="归并排序"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/24/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/" title="归并排序">归并排序</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-04-24T15:47:04.000Z" title="Created 2021-04-24 23:47:04">2021-04-24</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">归并排序
+**时间复杂度：O(nlogn)**。
+
+步骤：
+
+确定分界点mid=(l+r)。
+归并排序左右两段。
+有序归并，合二为一。
+
+
+
+123456789101112131415161718192021222324252627282930#include &lt;bits/stdc++.h&gt;using namespace std;const int maxn = 1e6 + 10;int q[maxn], tmp[maxn], n;void ms(int q[], int l, int r) &#123;    if (l &gt;= r) return;    int mid = l + r &gt;&gt; 1;    ms(q, l, mid), ms(q, mid + 1, r);        int i = l, j = mid + 1, k = 0;    while (i &lt;= mid &amp;&amp; j &lt;= r)         if (q[i] &lt;= q[j]) tmp[k++] = q[i++];        else tm ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/04/24/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="快速排序">     <img class="post_bg" src="https://ae01.alicdn.com/kf/Ucb889b3d69444fada7ab02e47ab88fd3Z.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="快速排序"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/24/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="快速排序">快速排序</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-04-24T15:46:56.000Z" title="Created 2021-04-24 23:46:56">2021-04-24</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">快速排序
+**时间复杂度：O(nlogn)**。
+
+步骤：
+
+确定分界点X：q[mid]。
+递归处理左右两段，使得小于等于X的在数组的前面，大于等于X的在数组的后面。
+
+
+
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455#include &lt;bits/stdc++.h&gt;using namespace std;const int maxn = 1e5 + 10;int q[maxn];void qs(int q[], int l, int r) &#123;    if (l &gt;= r) return;    int i = l - 1, j = r + 1, mid = q[l + r &gt;&gt; 1];    while (i &lt; j) &#123;        do i++; while (q[i] &lt; mid);        do j--; while (q[j] &gt; mid);   ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/04/24/JavaWeb%E2%80%94%E2%80%94Tomcat/" title="JavaWeb——Tomcat">     <img class="post_bg" src="https://ae01.alicdn.com/kf/U4f68794e0013467c8672e0dc12402de4b.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaWeb——Tomcat"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/24/JavaWeb%E2%80%94%E2%80%94Tomcat/" title="JavaWeb——Tomcat">JavaWeb——Tomcat</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-04-24T07:46:46.000Z" title="Created 2021-04-24 15:46:46">2021-04-24</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">一、Tomcat1. JavaWeb的概念
+JavaWeb是指，所有通过Java语言编写可以通过浏览器访问的程序的总称，叫 JavaWeb。JavaWeb是基于请求和响应来开发的。
+请求是指客户端给服务器发送数据，叫请求Request。
+响应是指服务器给客户端回传数据，叫响应Response。
+响应是指服务器给客户端回传数据，叫响应Response。
+
+2. Web资源的分类
+web资源按实现的技术和呈现的效果的不同，又分为静态资源和动态资源两种。
+静态资源：html、css、js、txt、mp4视频、jpg图片。
+动态资源：jsp页面、Servlet程序。
+
+3. 常见的Web服务器
+Tomcat：由Apache组织提供的一种Web服务器，提供对jsp和Servlet的支持。它是一种轻量级的javaWeb容器(服务器)，也是当前应用最广的JavaWeb服务器(免费)。
+Jboss：是一个遵从JavaEE规范的、开放源代码的、纯Java的EJB服务器，它支持所有的JavaEE规范。
+Resin：是CAUCHO公司的产品，是一个非常流行的服务器，对servlet和JSP提供了良好的支持， ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/04/23/JavaWeb%E2%80%94%E2%80%94XML/" title="JavaWeb——XML">     <img class="post_bg" src="https://ae01.alicdn.com/kf/U3d30d462dfd248da8a8dc92f173ec0ebB.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaWeb——XML"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/23/JavaWeb%E2%80%94%E2%80%94XML/" title="JavaWeb——XML">JavaWeb——XML</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-04-22T17:05:26.000Z" title="Created 2021-04-23 01:05:26">2021-04-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">一、XML1. XML简介
+xml是可拓展的标记性语言。
+用来保存数据，而且这些数据具有自我描述性。
+可以做为项目或者模块的配置文件。
+还可以做为网络传输数据的格式(现在JSON为主)。
+
+2. XML语法2.1 文档声明
+
+2.2 XML注释
+HTML和XML注释一样。
+
+2.3 元素(标签)
+XML元素指的是从(且包括)标签直到结束标签的部分。
+元素可包含其他元素，文本或两者的混合物。元素也可以拥有属性。
+XML的命名规则：
+名称可以含字母、数字、其他字符。
+名称不能以数字或标点符号开始。
+名称不能以字符xml(XML等)开始(实际上是可以的)。
+名称不能包含空格。
+
+
+XML中的元素也分成单标签和双标签。
+XML对大小写敏感。
+所有XML元素都须有关闭标签。
+XML文档必须有唯一的根元素。
+XML中的特殊字和HTML中一样。
+
+2.4 属性
+属性可以提供标签的额外信息。
+每个属性的值必须用引号括起来，单引号双引号都可以。
+
+2.5 文本区域(CDATA区)
+
+3. XML解析技术
+不管是html文件还是xml文件它们都是标记型文档，都可以使用w3c组织制定的Dom技术来解析。
+
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/04/23/Codeforces-competition-training-summary/" title="Codeforces competition training summary">     <img class="post_bg" src="https://ae01.alicdn.com/kf/U70fb2d244012427981ac1fe60f295e3et.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Codeforces competition training summary"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/23/Codeforces-competition-training-summary/" title="Codeforces competition training summary">Codeforces competition training summary</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">Sticky</span><span class="article-meta__separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-04-22T17:01:03.000Z" title="Created 2021-04-23 01:01:03">2021-04-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">Codeforces competition training summary1. 比赛记录表格
+
+
+Codeforces
+A
+B
+C
+D
+E
+F
+G
+H
+视频讲解
+完成数量/题目数量
+Date
+
+
+
+Codeforces Round #717 (Div. 2)
+800
+1500
+1700
+2100
+
+
+
+
+
+4/5
+2021-4-22
+
+
+Contest 2050 and Codeforces Round #718 (Div. 1 + Div. 2)
+800
+1200
+1400
+1800
+
+
+
+
+link
+4/8
+2021-4-22
+
+
+2. 完成情况图片
+Codeforces Round #717 (Div. 2)
+
+Contest 2050 and Codeforces Round #718 (Div. 1 + Div. 2)
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/04/23/01%E8%83%8C%E5%8C%85/" title="01背包">     <img class="post_bg" src="https://ae01.alicdn.com/kf/U31429755235245258ea0434f18f2766d5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="01背包"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/23/01%E8%83%8C%E5%8C%85/" title="01背包">01背包</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-04-22T16:38:40.000Z" title="Created 2021-04-23 00:38:40">2021-04-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">01背包一、思路
+二、代码123456789101112131415161718using namespace std;int f[1010][1010], w[1010], v[1010];int main() &#123;    int n, t;    cin &gt;&gt; n &gt;&gt; t;    for (int i = 1; i &lt;= n; i++) cin &gt;&gt; v[i] &gt;&gt; w[i];        for (int i = 1; i &lt;= n; i++)        for (int j = 0; j &lt;= t; j++) &#123;            f[i][j] = f[i - 1][j];            if (j &gt;= v[i]) f[i][j] = max(f[i][j], f[i - 1][j - v[i]] + w[i]);        &#125;                            cout &lt;&lt; f[n][t] &lt;&lt; endl ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/4/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/#content-inner">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/#content-inner">6</a><a class="page-number" href="/page/7/#content-inner">7</a><a class="extend next" rel="next" href="/page/6/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">69</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/12/hello-world/" title="Hello World"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2021/07/12/hello-world/" title="Hello World">Hello World</a><time datetime="2021-07-12T03:21:34.585Z" title="Created 2021-07-12 11:21:34">2021-07-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/07/%E9%9D%A2%E8%AF%95%E5%A4%8D%E4%B9%A0-Java%E8%99%9A%E6%8B%9F%E6%9C%BA-jvm/" title="[面试复习]Java虚拟机(jvm)"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="[面试复习]Java虚拟机(jvm)"/></a><div class="content"><a class="title" href="/2021/06/07/%E9%9D%A2%E8%AF%95%E5%A4%8D%E4%B9%A0-Java%E8%99%9A%E6%8B%9F%E6%9C%BA-jvm/" title="[面试复习]Java虚拟机(jvm)">[面试复习]Java虚拟机(jvm)</a><time datetime="2021-06-07T02:03:23.000Z" title="Created 2021-06-07 10:03:23">2021-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/31/%E4%BB%80%E4%B9%88%E6%98%AFBSD%E5%8D%8F%E8%AE%AE%EF%BC%9F/" title="什么是BSD协议？"><img src="https://pic.imgdb.cn/item/60b46f1139f6859bc20e2507.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="什么是BSD协议？"/></a><div class="content"><a class="title" href="/2021/05/31/%E4%BB%80%E4%B9%88%E6%98%AFBSD%E5%8D%8F%E8%AE%AE%EF%BC%9F/" title="什么是BSD协议？">什么是BSD协议？</a><time datetime="2021-05-31T05:07:11.000Z" title="Created 2021-05-31 13:07:11">2021-05-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/29/SSM%E2%80%94%E2%80%94SpringMVC-1/" title="SSM——SpringMVC(1)"><img src="https://pic.imgdb.cn/item/60b1767e08f74bc1596a7232.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SSM——SpringMVC(1)"/></a><div class="content"><a class="title" href="/2021/05/29/SSM%E2%80%94%E2%80%94SpringMVC-1/" title="SSM——SpringMVC(1)">SSM——SpringMVC(1)</a><time datetime="2021-05-28T22:59:42.000Z" title="Created 2021-05-29 06:59:42">2021-05-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/28/SSM%E2%80%94%E2%80%94Spring-2/" title="SSM——Spring(2)"><img src="https://pic.imgdb.cn/item/60b0aade08f74bc159eaa6ab.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SSM——Spring(2)"/></a><div class="content"><a class="title" href="/2021/05/28/SSM%E2%80%94%E2%80%94Spring-2/" title="SSM——Spring(2)">SSM——Spring(2)</a><time datetime="2021-05-28T06:10:47.000Z" title="Created 2021-05-28 14:10:47">2021-05-28</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Essay/"><span class="card-category-list-name">Essay</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%94%9F%E4%B9%9F%E6%9C%89%E6%B6%AF-%E6%84%9F%E6%82%9F/"><span class="card-category-list-name">生也有涯(感悟)</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">知也无涯(学习)</span><span class="card-category-list-count">65</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/AOP/" style="font-size: 1.1em; color: #999">AOP</a> <a href="/tags/Atcoder/" style="font-size: 1.1em; color: #999">Atcoder</a> <a href="/tags/Codeforces/" style="font-size: 1.3em; color: #99a1ac">Codeforces</a> <a href="/tags/EL%E8%A1%A8%E8%BE%BE%E5%BC%8F/" style="font-size: 1.1em; color: #999">EL表达式</a> <a href="/tags/Essay/" style="font-size: 1.1em; color: #999">Essay</a> <a href="/tags/Git/" style="font-size: 1.1em; color: #999">Git</a> <a href="/tags/HTML-CSS/" style="font-size: 1.1em; color: #999">HTML&&CSS</a> <a href="/tags/HTTP/" style="font-size: 1.1em; color: #999">HTTP</a> <a href="/tags/IOC%E5%AE%B9%E5%99%A8/" style="font-size: 1.1em; color: #999">IOC容器</a> <a href="/tags/JDBC/" style="font-size: 1.1em; color: #999">JDBC</a> <a href="/tags/JDBCTemplate/" style="font-size: 1.1em; color: #999">JDBCTemplate</a> <a href="/tags/JSON/" style="font-size: 1.1em; color: #999">JSON</a> <a href="/tags/JSTL%E6%A0%87%E7%AD%BE%E5%BA%93/" style="font-size: 1.1em; color: #999">JSTL标签库</a> <a href="/tags/JVM/" style="font-size: 1.1em; color: #999">JVM</a> <a href="/tags/Java/" style="font-size: 1.1em; color: #999">Java</a> <a href="/tags/JavaScript/" style="font-size: 1.1em; color: #999">JavaScript</a> <a href="/tags/JavaWeb/" style="font-size: 1.1em; color: #999">JavaWeb</a> <a href="/tags/LCS/" style="font-size: 1.1em; color: #999">LCS</a> <a href="/tags/LIS/" style="font-size: 1.1em; color: #999">LIS</a> <a href="/tags/Leetcode/" style="font-size: 1.5em; color: #99a9bf">Leetcode</a> <a href="/tags/Linux/" style="font-size: 1.1em; color: #999">Linux</a> <a href="/tags/Listener%E7%9B%91%E5%90%AC%E5%99%A8/" style="font-size: 1.1em; color: #999">Listener监听器</a> <a href="/tags/Maven/" style="font-size: 1.1em; color: #999">Maven</a> <a href="/tags/MyBatis/" style="font-size: 1.5em; color: #99a9bf">MyBatis</a> <a href="/tags/MySQL/" style="font-size: 1.5em; color: #99a9bf">MySQL</a> <a href="/tags/Poem/" style="font-size: 1.1em; color: #999">Poem</a> <a href="/tags/Servlet/" style="font-size: 1.1em; color: #999">Servlet</a> <a href="/tags/Spring5/" style="font-size: 1.3em; color: #99a1ac">Spring5</a> <a href="/tags/Spring5%E6%96%B0%E5%8A%9F%E8%83%BD/" style="font-size: 1.1em; color: #999">Spring5新功能</a> <a href="/tags/SpringBoot2/" style="font-size: 1.1em; color: #999">SpringBoot2</a> <a href="/tags/SpringMVC/" style="font-size: 1.1em; color: #999">SpringMVC</a> <a href="/tags/TCP-IP/" style="font-size: 1.1em; color: #999">TCP/IP</a> <a href="/tags/Tomcat/" style="font-size: 1.1em; color: #999">Tomcat</a> <a href="/tags/XML/" style="font-size: 1.1em; color: #999">XML</a> <a href="/tags/jQuery/" style="font-size: 1.1em; color: #999">jQuery</a> <a href="/tags/jsp/" style="font-size: 1.1em; color: #999">jsp</a> <a href="/tags/%E4%B8%89%E5%88%86/" style="font-size: 1.1em; color: #999">三分</a> <a href="/tags/%E4%BA%8B%E5%8A%A1%E6%93%8D%E4%BD%9C/" style="font-size: 1.1em; color: #999">事务操作</a> <a href="/tags/%E5%89%91%E6%8C%87Offer/" style="font-size: 1.1em; color: #999">剑指Offer</a> <a href="/tags/%E5%8C%BA%E9%97%B4DP/" style="font-size: 1.1em; color: #999">区间DP</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">July 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">June 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">May 2021</span><span class="card-archive-list-count">28</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/04/"><span class="card-archive-list-date">April 2021</span><span class="card-archive-list-count">31</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/03/"><span class="card-archive-list-date">March 2021</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">December 2020</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">69</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-07-12T15:58:25.495Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax src="https://cdn.jsdelivr.net/npm/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+                        function gitcalendar_injector_config(){
+                          var parent_div_git = document.getElementById('recent-posts');
+                          var item_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+                          parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+                          console.log('已挂载gitcalendar')
+                          }
+
+                        if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+                            gitcalendar_injector_config()
+                            GitCalendarInit("https://gitcalendar.akilar.top/api?fujang233",['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c'],'fujang233')
+                        }
+                      </script><!-- hexo injector body_end end --></body></html>

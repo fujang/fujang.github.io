@@ -1,0 +1,282 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>计算机网络自顶向下方法第一章——计算机网络和因特网 Summary after reading | Hexo</title><meta name="keywords" content="计算机网络"><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Summary after reading professional books">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络自顶向下方法第一章——计算机网络和因特网 Summary after reading">
+<meta property="og:url" content="http://example.com/2021/04/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%E7%AC%AC%E4%B8%80%E7%AB%A0%E2%80%94%E2%80%94%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%92%8C%E5%9B%A0%E7%89%B9%E7%BD%91-Summary-after-reading/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Summary after reading professional books">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ae01.alicdn.com/kf/Ue6847b28ee8e44b385a8b60a66ba7300V.jpg">
+<meta property="article:published_time" content="2021-04-28T09:57:24.000Z">
+<meta property="article:modified_time" content="2021-05-06T12:28:04.675Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="计算机网络">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ae01.alicdn.com/kf/Ue6847b28ee8e44b385a8b60a66ba7300V.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2021/04/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%E7%AC%AC%E4%B8%80%E7%AB%A0%E2%80%94%E2%80%94%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%92%8C%E5%9B%A0%E7%89%B9%E7%BD%91-Summary-after-reading/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '计算机网络自顶向下方法第一章——计算机网络和因特网 Summary after reading',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-05-06 20:28:04'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/style.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-filter-gitcalendar/lib/gitcalendar.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">69</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> Archives</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Timeline</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-bars"></i><span> Literature</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fa fa-tasks"></i><span> Anime</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://ae01.alicdn.com/kf/U78919e76605248dd90287b2a78a8bb81C.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> Archives</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Timeline</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-bars"></i><span> Literature</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fa fa-tasks"></i><span> Anime</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">计算机网络自顶向下方法第一章——计算机网络和因特网 Summary after reading</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-04-28T09:57:24.000Z" title="Created 2021-04-28 17:57:24">2021-04-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-05-06T12:28:04.675Z" title="Updated 2021-05-06 20:28:04">2021-05-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="计算机网络自顶向下方法第一章——计算机网络和因特网 Summary after reading"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="计算机网络自顶向下方法第一章——计算机网络和因特网-Summary-after-reading"><a href="#计算机网络自顶向下方法第一章——计算机网络和因特网-Summary-after-reading" class="headerlink" title="计算机网络自顶向下方法第一章——计算机网络和因特网 Summary after reading"></a>计算机网络自顶向下方法第一章——计算机网络和因特网 Summary after reading</h2><ul>
+<li><p>端系统通过通信链路和分组交换机连接到一起。不同的链路能够以不同的速率传输数据，链路的传输速率是以比特/秒度量。</p>
+</li>
+<li><p>当今的因特网中，两种最著名的类型是路由器和链路层交换机。链路层交换机通常用于接入网中，而路由器通常用于网络核心中。</p>
+</li>
+<li><p>端系统通过因特网服务提供商ISP接入因特网。每个ISP自身就是一个由多台分组交换机和多段通信链路组成的网络。各ISP为端系统提供了各种不同类型的网络接入，包括如线缆调制解调器或DSL那样的住宅宽带接入、高速局域网接入和移动无线接入。ISP也为内容提供者提供因特网接入服务，将Web站点和视频服务器直接连入因特网。</p>
+</li>
+<li><p>因为一些应用程序涉及多个相互交换数据的端系统，故它们被称为分布式应用程序。重要的是，因特网应用程序运行在端系统上，即它们并不运行在网络核心中的分组交换机中。尽管分组交换机能够加速端系统之间的数据交换，但它们并不在意作为数据的源或宿的应用程序。</p>
+</li>
+<li><p>与因特网相连的端系统提供了一个套接字接口(socket interface)，该接口规定了运行在一个端系统上的程序请求因特网基础设施向运行在另一个端系统上的特定目的地程序交付数据的方式。因特网套接字接口是一套发送程序必须遵循的规则集合，因此因特网能够将数据交付给目的地。</p>
+</li>
+<li><p>协议定义了在两个或多个通信实体之间交换的报文的格式和顺序，以及报文发送和/或接收一条报文或其他事件所采取的动作。</p>
+</li>
+<li><p>我们接下来考虑接入网，这是指将端系统物理连接到其边缘路由器的网络。边缘路由器是端系统到任何其他远程端系统的路径上的第一台路由器。</p>
+</li>
+</ul>
+<p><img src="https://ae01.alicdn.com/kf/U1689d74b721147c59addfe0bd3c92904t.jpg"></p>
+<ul>
+<li>几种类型的接入链路和使用接入网的几种环境：<ul>
+<li>家庭接入：DSL、电缆、FTTH、拨号和卫星：<ul>
+<li>宽带住宅接入有两种最流行的类型：数字用户线(DSL)和电缆。住户通常从提供本地电话接入的本地电话公司处获得DSL因特网接入。因此，当使用DSL时，用户的本地电话公司也是它的ISP。每个用户的DSL调制解调器使用现有的电话线即双绞铜线与位于电话公司的本地中心局中的数字用户线接入复用器(DSLAM)交换数据。家庭的DSL调制解调器得到数字数据后将其转换为高频音，以通过电话线传输给本地中心局；来自许多家庭的模拟信号在DSLAM处被转换回数字形式。</li>
+<li>家庭电话线同时承载了数据和传统的电话信号，它们用不同的频率进行编码：高速下行信道，位于50kHz到1MHz频段；中速上行信道，位于4kHz到50kHz频段；普通的双向电话信道，位于0到4kHz频段。</li>
+<li>这种方法使单根DSL线路看起来就像有3根单独的线路一样，因此一个电话呼叫和一个因特网连接能够同时共享DSL链路。在用户一 侧，一个分配器把到达家庭的数据信号和电话信号分隔开，并将数据信号转发给DSL调制解调器。在电话公司一侧，在本地中心局中，DSLAM把数据和电话信号分隔开，并将数据送往因特网。数百甚至上千个家庭与同一个DSLAM相连。</li>
+<li>DSL利用电话公司现有的本地电话基础设施，而电缆因特网接入利用了有线电视公司现有的有线电视基础设施。住宅从提供有线电视的公司获得了电缆因特网接入。光缆将电缆头端连接到地区枢纽，从这里使用传统的同轴电缆到达各家各户和公寓。每个地区枢纽通常支持500 -5000个家庭。因为在这个系统中应用了光纤和同轴电缆，所以它经常被称为混合光纤同轴(HFC)系统。</li>
+<li>电缆因特网接入需要特殊的调制解调器，这种调制解调器称为电缆调制解调器如同DSL调制解调器，电缆调制解调器通常是一个外部设备，通过一个以太网端口连接到家庭PC。在电缆头端，电缆调制解调器端接系统与DSL网络的DSLAM具有类似的功能，即将来自许多下行家庭中的电缆调制解调器发送的模拟信号转换回数字形式。 电缆调制解调器将HFC网络划分为下行和上行两个信道。下行信道分配的传输速率通常比上行信道的高。</li>
+<li>电缆因特网接入的一个重要特征是共享广播媒体。特别是，由头端发送的每个分组向下行经每段链路到每个家庭；每个家庭发送的每个分组经上行信道向头端传输。因此，如果几个用户同时经下行信道下载一个视频文件，每个用户接收视频文件的实际速率将大大低于电缆总计的下行速率。而另一方面，如果仅有很少的活跃用户在进行Web冲浪，则每个用户都可以以全部的下行速率接收Web网页，因为用户们很少在完全相同的时刻请求网页。因为上行信道也是共享的，需要一个分布式多路访问协议来协调传输和避免碰撞。</li>
+<li>但一种提供更高速率的新兴技术是光纤到户(FTTH)顾名思义, FTTH概念简单，从本地中心局直接到家庭提供了一条光纤路径。从本地中心局到家庭有几种有竞争性的光纤分布方案。最简单的光纤分布网络称为直接光纤，从本地中心局到每户设置一根光纤。更为一般的是，从中心局岀来的每根光纤实际上由许多家庭共享，直到相对接近这些家庭的位置，该光纤才分成每户一根光纤。进行这种分配有两种有竞争性的光纤分布体系结构：主动光纤网络(AON)和被动光纤网络(PON)。</li>
+<li>PON中每个家庭具有一个光纤网络端接器(ONT)，它由专门的光纤连接到邻近的分配器，该分配器把一些家庭(通常少于100个)集结到一根共享的光纤，该光纤再连接到本地电话和公司的中心局中的光纤线路端接器(OLT)，该OLT提供了光信号和电信号之间的转换，经过本地电话公司路由器与因特网相连。在家庭中，用户将一台家庭路由器(通常是无线路由器)与ONT相连，并经过这台家庭路由器接入因特网。在PON体系结构中，所有从OLT发送到分配器的分组在分配器(类似于一个电缆头端)处复制。</li>
+</ul>
+</li>
+<li>企业(家庭)接入：以太网和Wi-Fi：使用局域网(LAN)将端系统连接到边缘路由器。尽管有许多不同类型的局域网技术，但是以太网是最为流行的接入技术。</li>
+<li>广域无线接入：3G和LTE：设备越来越多地用来在移动中发信息、在社交网络中分享照片、观看视频和放音乐。这些设备应用了与蜂窝移动电话相同的无线基础设施，通过蜂窝网提供商运营的基站来发送和接收分组。与Wi-Fi不同的是，一个用户仅需要位于基站的数万米计算机网络和因特网(而不是几十米)范围内。</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://ae01.alicdn.com/kf/Udfa9c88392b94ad69c643a00feab16888.jpg"></p>
+<p><img src="https://ae01.alicdn.com/kf/U44eea8f4f0e6447899edda0eaae9467c4.jpg"></p>
+<ul>
+<li><p>物理媒体：HFC使用了光缆和同轴电缆相结合的技术。DSL和以太网使用了双绞铜线。移动接入网使用了无线电频谱。物理媒体分成两种类型：导引型媒体和非导引型媒体对于导引型媒体，电波沿着固体媒体前行，如光缆、双绞铜线或同轴电缆。对于非导引型媒体，电波在空气或外层空间中传播，例如在无线局域网或数字卫星频道中。物理链路的实际成本与其他网络成本相比通常是相当小的。正因为这个原因，许多建筑商在一个建筑物的每个房间中安装了双绞线、光缆和同轴电缆。即使最初仅使用了一种媒体，在不久的将来也可能会使用另一种媒体，这样将来不必再铺设另外的线缆，从而节省了经费。</p>
+<ul>
+<li>双绞铜线：最便宜并且最常用的导引型传输媒体是双绞铜线。</li>
+<li>同轴电缆：同轴电缆在电缆电视系统中相当普遍。电缆电视系统最近与电缆调制解调器结合起来，为住宅用户提供数十Mbps速率的因特网接入。同轴电缆能被用作导引型共享媒体特别是，许多端系统能够直接与该电缆相连，每个端系统都能接收由其他端系统发送的内容。</li>
+<li>光纤：光纤是一种细而柔软的、能够导引光脉冲的媒体。</li>
+<li>陆地无线电信道：无线电信道承载电磁频谱中的信号。它不需要安装物理线路，并具有穿透墙壁、提供与移动用户的连接以及长距离承载信号的能力，因而成为一种有吸引力的媒体。</li>
+<li>卫星无线电信道：一颗通信卫星连接地球上的两个或多个微波发射器/接收器，它们被称为地面站。该卫星在一个频段上接收传输，使用一个转发器再生信号，并在另一个频率上发射信号。</li>
+</ul>
+</li>
+<li><p>通过网络链路和交换机移动数据有两种基本方法：电路交换和分组交换。</p>
+</li>
+<li><p>分组交换：分组以等于该链路最大传输速率的速度传输通过通信链路。因此，如果某源端系统或分组交换机经过一条链路发送一个L比特的分组，链路的传输速率为R比特/秒，则传输该分组的时间为L/R秒。</p>
+</li>
+<li><p>分组交换的特点：</p>
+<ul>
+<li>存储转发传输：因为该路由器应用了存储转发机制，所以此时它还不能传输已经接收的比特，而是必须先缓存该分组的比特。仅当路由器已经接收完了该分组的所有比特后，它才能开始向出链路传输该分组。</li>
+<li>排队时延和分组丢失：该分组交换机具有一个输出队列，它用于存储路由器准备发往那条链路的分组。该输出缓存在分组交换中起着重要的作用。如果到达的分组需要传输到某条链路，但发现该链路正忙于传输其他分组，该到达分组必须在输出缓存中等待。因此，除了存储转发时延以外，分组还要承受输岀缓存的排队时延。这些时延是变化的，变化的程度取决于网络的拥塞程度。因为缓存空间的大小是有限的，一个到达的分组可能发现该缓存已被其他等待传输的分组完全充满了。在此情况下，将出现分组丢失(丢包)，到达的分组或已经排队的分组之一将被丢弃。</li>
+<li>转发表和路由选择协议：每台路由器具有一个转发表，用于将目的地址(或目的地址的一部分)映射成为输岀链路。当某分组到达一台路由器时，路由器检查该地址，并用这个目的地址搜索其转发表，以发现适当的出链路。路由器则将分组导向该出链路。因特网具有一些特殊的路由选择协议，用于自动地设置这些转发表。例如，一个路由选择协议可以决定从每 台路由器到每个目的地的最短路径，并使用这些最短路径结果来配置路由器中的转发表。</li>
+</ul>
+</li>
+<li><p>电路交换：在电路交换网络中，在端系统间通信会话期间，预留了端系统间沿路径通信所需要的资源(缓存，链路传输速率)。在分组交换网络中，这些资源则不是预留的；会话的报文按需使用这些资源，其后果可能是不得不等待(即排队)接入通信线路。当网络创建这种电路时，它也在连接期间在该网络链路上预留了恒定的传输速率(表示为每条链路传输容量的一部分)。既然已经为该发送方到接收方连接预留了带宽，则发送方能够以确保的恒定速率向接收方传送数据。</p>
+</li>
+<li><p>电路交换网络中的复用：链路中的电路是通过频分复用(FDM)或时分复用(TDM)来实现的。</p>
+<ul>
+<li>对于FDM，链路的频谱由跨越链路创建的所有连接共享。特别是，在连接期间链路为每条连接专用一个频段。频段的宽度称为带宽。</li>
+<li>对于TDM，时间被划分为固定期间的帧，并且每个帧又被划分为固定数量的时隙。当网络跨越一条链路创建一条连接时。网络在每个帧中为该连接指定一个时隙。这些时隙专门由该连接单独使用，一个时隙(在每个帧内)可用于传输该连接的数据。</li>
+<li>对于一个支持多达4条电路的特定网络链路的FDM和TDM。对于FDM，其频率域被分割为4个频段，每个频段的带宽是4kHz；对于TDM，其时域被分割为帧，在每个帧中具有4个时隙，在循环的TDM帧中每条电路被分配相同的专用时隙。对于TDM，一条电路的传输速率等于帧速率乘以一个时隙中的比特数量。例如，如果链路每秒传输8000个帧，每个时隙由8个比特组成，则每条电路的传输速率是64kbps。</li>
+</ul>
+</li>
+<li><p>电路交换因为在静默期专用电路空闲而不够经济。</p>
+</li>
+<li><p>分组交换不适合实时服务(例如，电话和视频会议)，因为它的端到端时延是可变的和不可预测的(主要是因为排队时延的变动和不可预测所致)。分组交换的优势为：它提供了比电路交换更好的带宽共享、它比电路交换更简单、更有效，实现成本更低。分组交换差不多总是提供了与电路交换相同的性能，并且允许在用户数量是其3倍时情况也是如此，且可以在其余会话空闲时占用全部资源发送数据。电路交换不考虑需求，而预先分配了传输链路的使用，这使得已分配而并不需要的链路时间未被利用。另一方面，分组交换按需分配链路使用。链路传输能力将在所有需要在链路上传输分组的用户之间逐分组地被共享。</p>
+</li>
+<li><p>ISP的互联</p>
+<ul>
+<li>网络结构1：用单一的全球传输ISP互联所有接入ISP。接入ISP被认为是客户，而全球传输ISP被认为是提供商。</li>
+<li>网络结构2：它由数十万接入ISP和多个全球传输1SP组成。这些全球传输ISP之间必须是互联的。</li>
+<li>网络结构3：不仅有多个竞争的第一层ISP，而且在一个区域可能有多 个竞争的区域ISP。在这样的等级结构中，每个接入ISP向其连接的区域ISP支付费用，并且每个区域ISP向它连接的第一层ISP支付费用。</li>
+<li>网络结构4：由接入ISP、区域ISP、第一层ISP、PoP(PoP存在于等级结构的所有层次，但底层(接入ISP)等级除外。一个POP只是提供商网络中的一台或多台路由器(在相同位置)群组，其中客户ISP能够与提供商ISP连接。对于要与提供商PoP连接的客户网络，它能从第三方电信提供商租用高速链路将它的路由器之一直接连接到位于该PoP的一台路由器)、多宿(可以与两个或更多提供商ISP连接)、对等(位于相同等级结构层次的邻近一对ISP能够对等，直接将它们的网络连到一起，使它们之间的所有流量经直接连接而不是通过上游的中间ISP传输)和IXP(IXF是一个汇合点，多个ISP能够在这里一起对等)组成。</li>
+<li>网络结构5：它通过在网络结构4顶部增加内容提供商网络。</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://ae01.alicdn.com/kf/U42ff9de873fd4d9387a56f5b26fc3ec6a.jpg"></p>
+<ul>
+<li>分组中时延的概括：<ul>
+<li>处理时延：检查分组首部和决定将该分组导向何处。处理时延也能够包括其他因素，如检查比特级别的差错所需要的时间，该差错岀现在从上游节点向路由器A传输这些分组比特的过程中。在这种节点处理之后，路由器将该分组引向通往路由器B链路之前的队列。</li>
+<li>排队时延：在队列中，当分组在链路上等待传输时，它经受排队时延。</li>
+<li>传输时延：传输时延是L/R。这是将所有分组的比特推向链路所需要的时间。</li>
+<li>传播时延：从该链路的起点到路由器B传播所需要的时间是传播时延。该比特以该链路的传播速率传播。该传播速率取决于该链路的物理媒体。处理时延通常是微不足道的，然而，它对一台路由器的最大吞吐量有重要影响，最大吞吐量是一台路由器能够转发分组的最大速率。</li>
+<li>以上这些时延总体累加起来是节点总时延。</li>
+</ul>
+</li>
+<li>排队时延的大小很大程度取决于流量到达该队列的速率、链路的传输速率和到达流量的性质，即流量是周期性到达还是以突发形式到达。令a表示分组到达队列的平均速率，R是传输速率，假定所有分组都是由L比特组成的。则比特到达队列的平均速率是Labps。假定该队列非常大，因此它基本能容纳无限数量的比特。比率La/R被称为流量强度。如果La/R&gt;l，则比特到达队列的平均速率超过从该队列传输岀去的速率，该队列趋向于无限增加，并且排队时延将趋向无穷大！因此，流量工程中的一条金科玉律是：设计系统时流量强度不能大于1。该强度的少量增加将导致时延大比例增加。</li>
+<li>分组丢失的比例随着流量强度增加而增加。因此，一个节点的性能常常不仅根据时延来度量，而且根据丢包的概率来度量。</li>
+<li>计算机网络中的吞吐量：在任何时间瞬间的瞬时吞吐量是主机B接收到该文件的速率。</li>
+</ul>
+<p><img src="https://ae01.alicdn.com/kf/Ub6a2f5a413604985a3d5bcb092f35b44v.jpg"></p>
+<ul>
+<li><p>对于服务器和客户这两个端系统，它们由两条通信链路和一台路由器相连。如果比特继续以速率$R_s$到达路由器，继续以$R_c$离开路由器的话，在该路由器中等待传输给客户的积压比特将不断增加，这是一种最不希望的情况！因此，对于这种简单的两链路网络，其吞吐量是$min(R_s, R_c)$这就是说，它是瓶颈链路的传输速率。那么对于多条链路的网络，其文件吞吐量是$min(R_1, R_2, R_3…R_N)$。</p>
+</li>
+<li><p>目前因特网的核心的确超量配置了高速率的链路，从而很少出现拥塞。因此，在今天因特网中对吞吐量的限制因素通常是接入网。但是如果因特网的核心的速率与$R_s$和$R_c$有相同量级，这时每个下载的瓶颈不再位于接入网中，而是位于核心中的共享链路了。</p>
+</li>
+<li><p>某层向它的上一层提供的服务，即所谓一层的服务模型。例如，由第n层提供的服务可能包括报文从网络的一边到另一边的可靠交付。这可能是通过使用第n-1层的边缘到边缘的不可靠报文传送服务，加上第n层的检测和重传丢失报文的功能来实现的。</p>
+</li>
+<li><p>协议分层如下：</p>
+<ul>
+<li>应用层：HTTP、SMTP、FTP、DNS，我们把这种位于应用层的信息分组称为<strong>报文</strong>。</li>
+<li>运输层：TCP、UDP。TCP向它的应用程序提供了面向连接的服务。这种服务包括了应用层报文向目的地的确保传递和流量控制。TCP也将长报文划分为短报文，并提供拥塞控制机制，因此当网络拥塞时，源抑制其传输速率。UDP协议向它的应用程序提供无连接服务。这是一种不提供不必要服务的服务，没有可靠性，没有流量控制，也没有拥塞控制。我们把运输层的分组称为<strong>报文段</strong>。</li>
+<li>网络层：IP、路由选择协议。因特网的网络层负责将称为<strong>数据报</strong>的网络层分组从一台主机移动到另一台主机。</li>
+<li>链路层：网络层必须依靠该链路层的服务。我们把链路层分组称为<strong>帧</strong>。</li>
+<li>物理层：虽然链路层的任务是将整个帧从一个网络元素移动到邻近的网络元素，而物理层的任务 是将该帧中的一个个比特从一个节点移动到下一个节点。</li>
+</ul>
+</li>
+<li><p>OSI模型：应用层、表示层、会话层、运输层、网络层、数据链路层和物理层。表示层的作用是使通信的应用程序能够解释交换数据的含义。这些服务包括数据压缩和数据加密以及数据描述(这使得应用程序不必担心在各台计算机中表示/存储的内部格式不同的问题)。会话层提供了数据交换的定界和同步功能，包括了建立检查点和恢复方案的方法。</p>
+</li>
+<li><p>与端系统类似，路由器和链路层交换机以多层次的方式组织它们的网络硬件和软件。而路由器和链路层交换机并不实现协议栈中的所有层次。</p>
+</li>
+<li><p>在每一 层，一个分组具有两种类型的字段：首部字段和有效载荷字段。有效载荷通常是来自上一层的分组。</p>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2021/04/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%E7%AC%AC%E4%B8%80%E7%AB%A0%E2%80%94%E2%80%94%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%92%8C%E5%9B%A0%E7%89%B9%E7%BD%91-Summary-after-reading/">http://example.com/2021/04/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%E7%AC%AC%E4%B8%80%E7%AB%A0%E2%80%94%E2%80%94%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%92%8C%E5%9B%A0%E7%89%B9%E7%BD%91-Summary-after-reading/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a></div><div class="post_share"><div class="social-share" data-image="https://ae01.alicdn.com/kf/Ue6847b28ee8e44b385a8b60a66ba7300V.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/04/28/JDBC%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF-%E5%B0%9A%E7%A1%85%E8%B0%B7-Summary-for-videos/"><img class="prev-cover" src="https://ae01.alicdn.com/kf/Uef9d732abe414145aff18c1f5bb940e52.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">JDBC核心技术[尚硅谷] Summary for videos</div></div></a></div><div class="next-post pull-right"><a href="/2021/04/28/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97/"><img class="next-cover" src="https://ae01.alicdn.com/kf/Uc1bbb8edbfde45ee8adbe67b42155f86G.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">最长公共子序列</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2021/05/06/计算机网络自顶向下方法第二章——应用层-Summary-after-reading/" title="计算机网络自顶向下方法第二章——应用层 Summary after reading"><img class="cover" src="https://ae01.alicdn.com/kf/U17ea5ef5f37b49b5b968d0dac77d9905A.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-05-06</div><div class="title">计算机网络自顶向下方法第二章——应用层 Summary after reading</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">69</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%E7%AC%AC%E4%B8%80%E7%AB%A0%E2%80%94%E2%80%94%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%92%8C%E5%9B%A0%E7%89%B9%E7%BD%91-Summary-after-reading"><span class="toc-text">计算机网络自顶向下方法第一章——计算机网络和因特网 Summary after reading</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/12/hello-world/" title="Hello World"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2021/07/12/hello-world/" title="Hello World">Hello World</a><time datetime="2021-07-12T03:21:34.585Z" title="Created 2021-07-12 11:21:34">2021-07-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/07/%E9%9D%A2%E8%AF%95%E5%A4%8D%E4%B9%A0-Java%E8%99%9A%E6%8B%9F%E6%9C%BA-jvm/" title="[面试复习]Java虚拟机(jvm)"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="[面试复习]Java虚拟机(jvm)"/></a><div class="content"><a class="title" href="/2021/06/07/%E9%9D%A2%E8%AF%95%E5%A4%8D%E4%B9%A0-Java%E8%99%9A%E6%8B%9F%E6%9C%BA-jvm/" title="[面试复习]Java虚拟机(jvm)">[面试复习]Java虚拟机(jvm)</a><time datetime="2021-06-07T02:03:23.000Z" title="Created 2021-06-07 10:03:23">2021-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/31/%E4%BB%80%E4%B9%88%E6%98%AFBSD%E5%8D%8F%E8%AE%AE%EF%BC%9F/" title="什么是BSD协议？"><img src="https://pic.imgdb.cn/item/60b46f1139f6859bc20e2507.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="什么是BSD协议？"/></a><div class="content"><a class="title" href="/2021/05/31/%E4%BB%80%E4%B9%88%E6%98%AFBSD%E5%8D%8F%E8%AE%AE%EF%BC%9F/" title="什么是BSD协议？">什么是BSD协议？</a><time datetime="2021-05-31T05:07:11.000Z" title="Created 2021-05-31 13:07:11">2021-05-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/29/SSM%E2%80%94%E2%80%94SpringMVC-1/" title="SSM——SpringMVC(1)"><img src="https://pic.imgdb.cn/item/60b1767e08f74bc1596a7232.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SSM——SpringMVC(1)"/></a><div class="content"><a class="title" href="/2021/05/29/SSM%E2%80%94%E2%80%94SpringMVC-1/" title="SSM——SpringMVC(1)">SSM——SpringMVC(1)</a><time datetime="2021-05-28T22:59:42.000Z" title="Created 2021-05-29 06:59:42">2021-05-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/28/SSM%E2%80%94%E2%80%94Spring-2/" title="SSM——Spring(2)"><img src="https://pic.imgdb.cn/item/60b0aade08f74bc159eaa6ab.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SSM——Spring(2)"/></a><div class="content"><a class="title" href="/2021/05/28/SSM%E2%80%94%E2%80%94Spring-2/" title="SSM——Spring(2)">SSM——Spring(2)</a><time datetime="2021-05-28T06:10:47.000Z" title="Created 2021-05-28 14:10:47">2021-05-28</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax src="https://cdn.jsdelivr.net/npm/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+                        function gitcalendar_injector_config(){
+                          var parent_div_git = document.getElementById('recent-posts');
+                          var item_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+                          parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+                          console.log('已挂载gitcalendar')
+                          }
+
+                        if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+                            gitcalendar_injector_config()
+                            GitCalendarInit("https://gitcalendar.akilar.top/api?fujang233",['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c'],'fujang233')
+                        }
+                      </script><!-- hexo injector body_end end --></body></html>

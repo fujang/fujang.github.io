@@ -1,0 +1,557 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-07-12 23:58:25'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/style.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-filter-gitcalendar/lib/gitcalendar.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">69</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> Archives</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Timeline</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-bars"></i><span> Literature</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fa fa-tasks"></i><span> Anime</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> Archives</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Timeline</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-bars"></i><span> Literature</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fa fa-tasks"></i><span> Anime</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/05/26/JavaWeb%E2%80%94%E2%80%94JSON/" title="JavaWeb——JSON">     <img class="post_bg" src="https://pic.imgdb.cn/item/60ad972f08f74bc159b4ac9e.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaWeb——JSON"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/26/JavaWeb%E2%80%94%E2%80%94JSON/" title="JavaWeb——JSON">JavaWeb——JSON</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-05-26T00:12:27.000Z" title="Created 2021-05-26 08:12:27">2021-05-26</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">一、JSON1. 什么是JSON
+JSON(JavaScript Object Notation)是一种轻量级的数据交换格式。易于人阅读和编写。同时也易于机器解析和生成。JSON采用完全独立于语言的文本格式，而且很多语言都提供了对json的支持（包括C、C++、C#、Java、JavaScript、Perl、Python等）。这样就使得JSON成为理想的数据交换格式。
+JSON是一种轻量级的数据交换格式。轻量级指的是跟xml做比较。
+数据交换指的是客户端和服务器之间业务数据的传递格式。
+
+2. JSON在JavaScript中的使用2.1 json的定义
+json是由键值对组成，并且由花括号(大括号)包围。每个键由引号引起来，键和值之间使用冒号进行分隔，多组键值对之间进行逗号进行分隔。
+
+
+
+2.2 json的访问
+json本身是一个对象。json中的key我们可以理解为是对象中的一个属性。json中的key访问就跟访问对象的属性一样。
+
+
+
+2.3 json的两个常用方法
+json的存在有两种形式：
+对象的形式存在，我们叫它json对象。
+字符串的形式存在，我们叫它json字符串。
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/05/24/MySQL%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A-Summary-afer-reading/" title="MySQL必知必会 Summary afer reading">     <img class="post_bg" src="https://pic.imgdb.cn/item/60aba0d5ce272128a6a2e266.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MySQL必知必会 Summary afer reading"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/24/MySQL%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A-Summary-afer-reading/" title="MySQL必知必会 Summary afer reading">MySQL必知必会 Summary afer reading</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-05-24T10:10:33.000Z" title="Created 2021-05-24 18:10:33">2021-05-24</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/05/24/%E5%89%91%E6%8C%87Offer%E9%A2%98%E7%9B%AE%E6%80%BB%E7%BB%93-77%E9%A2%98/" title="剑指Offer题目总结[77题]">     <img class="post_bg" src="https://pic.imgdb.cn/item/60ab44d1ce272128a6b579c9.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="剑指Offer题目总结[77题]"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/24/%E5%89%91%E6%8C%87Offer%E9%A2%98%E7%9B%AE%E6%80%BB%E7%BB%93-77%E9%A2%98/" title="剑指Offer题目总结[77题]">剑指Offer题目总结[77题]</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">Sticky</span><span class="article-meta__separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-05-24T06:01:35.000Z" title="Created 2021-05-24 14:01:35">2021-05-24</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">
+
+
+problem
+problemName
+isNeedReview
+Summary
+Note
+
+
+
+1
+数组中重复的数字
+💭
+
+
+
+
+2
+不修改数组找出重复的数字
+💭
+
+
+
+
+3
+二维数组中的查找
+✅
+
+
+
+
+4
+替换空格
+✅
+
+
+
+
+5
+从尾到头打印链表
+✅
+
+
+
+
+6
+重建二叉树
+💭
+
+
+
+
+7
+二叉树的下一个节点
+💭
+
+
+
+
+8
+用两个栈实现队列
+✅
+
+
+
+
+9
+斐波那契数列
+✅
+
+
+
+
+10
+旋转数组的最小数字
+💭
+
+
+
+
+11
+矩阵中的路径
+✅
+
+
+
+
+12
+机器人的运动范围
+✅
+
+
+
+
+13
+剪绳子
+💭
+
+
+
+
+14
+二进制中1的个数
+✅
+
+
+
+
+15
+数值的整数次方
+✅
+
+
+
+
+16
+删除链表的节点
+✅
+
+
+
+
+17
+删除链表中重复的节点
+💭
+
+
+
+
+18
+正则表达式匹配
+✅
+
+
+
+
+19
+表示数值的字符串
+✅
+
+
+
+
+20
+调整数组顺序使奇数位于偶数前面
+✅
+
+
+
+
+21
+链表中倒数第k个节点
+✅
+
+
+
+
+22
+链表中环的入口结点
+✅
+
+
+
+
+23
+反转链表
+✅
+
+
+
+
+24
+合并两个排序的链表
+✅
+
+
+
+
+25
+树的子结构
+✅
+
+
+
+
+26
+二叉树的 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/05/24/Maven-%E5%B0%9A%E7%A1%85%E8%B0%B7-Summary-after-videos/" title="Maven[尚硅谷] Summary after videos">     <img class="post_bg" src="https://pic.imgdb.cn/item/60ab44e1ce272128a6b61d58.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Maven[尚硅谷] Summary after videos"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/24/Maven-%E5%B0%9A%E7%A1%85%E8%B0%B7-Summary-after-videos/" title="Maven[尚硅谷] Summary after videos">Maven[尚硅谷] Summary after videos</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-05-24T01:03:19.000Z" title="Created 2021-05-24 09:03:19">2021-05-24</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">Maven[尚硅谷] Summary after videos一、Maven简介1.1 Maven的需求
+目前技术在开发中存在的问题：
+一个项目就是一个工程：如果项目非常庞大，就不适合继续使用package来划分模块。最好是每一个模块对应一个工程，利于分工协作。借助于Maven就可以将一个项目拆分成多个工程。
+项目中的jar包必须手动复制、粘贴到WEB-INF/lib目录下：带来的问题是同样的jar包文件重复出现在不同的项目工程中，一方面浪费存储空间，另外也让工程比较臃肿。借助Maven，可以将jar包仅仅保存在“仓库”中，有需要使用的工程”引用”这个文件接口，并不需要真的把jar包复制过来。
+jar包需要别人替我们准备好，或到官网下载：不同技术的官网提供jar包下载的形式不同。有些技术的官网就是通过Maven或SVN等专门的工具来提供下载的。如果是以不规范的方式下载的jar包，那么其中的内容很可能也是不规范的。借助于Maven可以以一种规范的方式下载jar包。因为所有知名框架或第三方工具的jar包以及按照统一的规范存放在了Maven的中央仓库中。以规范的方式下载的jar包，内容也是可 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/05/23/Spring5%E2%80%94%E2%80%94Spring5%E6%96%B0%E5%8A%9F%E8%83%BD/" title="Spring5——Spring5新功能">     <img class="post_bg" src="https://pic.imgdb.cn/item/60aba085ce272128a6a05508.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring5——Spring5新功能"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/23/Spring5%E2%80%94%E2%80%94Spring5%E6%96%B0%E5%8A%9F%E8%83%BD/" title="Spring5——Spring5新功能">Spring5——Spring5新功能</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-05-23T06:19:28.000Z" title="Created 2021-05-23 14:19:28">2021-05-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/05/23/Spring5%E2%80%94%E2%80%94%E4%BA%8B%E5%8A%A1%E6%93%8D%E4%BD%9C/" title="Spring5——事务操作">     <img class="post_bg" src="https://pic.imgdb.cn/item/60aba069ce272128a69f70d9.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring5——事务操作"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/23/Spring5%E2%80%94%E2%80%94%E4%BA%8B%E5%8A%A1%E6%93%8D%E4%BD%9C/" title="Spring5——事务操作">Spring5——事务操作</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-05-23T02:08:53.000Z" title="Created 2021-05-23 10:08:53">2021-05-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">Spring5——事务操作一、事务概念
+事务是数据库操作最基本单元，逻辑上一组操作，要么都成功，如果有一个失败所有操作都失败。
+**事务四个特性(ACID)**：
+原子性。
+一致性。
+隔离性。
+持久性。
+
+
+
+二、模拟事务操作环境
+创建service，搭建dao，完成对象创建和注入关系。
+
+
+
+
+在dao创建两个方法：多钱和少钱的方法， 在service创建转账的方法。
+
+
+
+
+
+三、Spring事务管理概念
+事务添加到JavaEE三层结构里面Service层(业务逻辑层)。
+在Spring进行事务管理操作有两种方式：
+编程式事务管理。
+声明式事务管理(推荐使用)。
+
+
+声明式事务管理：
+基于注解方式(推荐使用)。
+基于xml配置文件方式。
+
+
+在Spring进行声明式事务管理，底层使用AOP原理。
+Spring事务管理API：提供一个接口，代表事务管理器，这个接口针对不同的框架提供不同的实现类。
+
+四、声明式事务管理——注解方式
+在Spring配置文件配置事务管理器。
+
+
+
+
+在Spring配置文件，开启事务注解，引入名称空间。
+
+
+
+
+开启事务注解。
+
+
+
+五、声明式事务管理参数配 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/05/23/Spring5%E2%80%94%E2%80%94JDBCTemplate/" title="Spring5——JDBCTemplate">     <img class="post_bg" src="https://pic.imgdb.cn/item/60a9b8e935c5199ba7b0d34b.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring5——JDBCTemplate"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/23/Spring5%E2%80%94%E2%80%94JDBCTemplate/" title="Spring5——JDBCTemplate">Spring5——JDBCTemplate</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-05-23T01:35:08.000Z" title="Created 2021-05-23 09:35:08">2021-05-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">Spring5——JDBCTemplate一、JDBCTemplate概念
+Spring框架对JDBC进行封装，使用JdbcTemplate方便实现对数据库操作。
+引入相关jar包。
+在Spring配置文件配置数据库连接池。
+
+
+
+
+配置JDBCTemplate对象，注入DataSource。
+
+
+
+
+创建service类，创建dao类，在dao注入JDBCTemplate对象
+
+
+
+二、JDBCTemplate操作数据库——添加
+在dao进行数据库添加操作，调用JDBCTemplate对象里面update方法实现添加操作。
+
+
+
+三、JDBCTemplate操作数据库——修改和删除
+使用JDBCTemplate模板所实现的 “增删改”都是调用了同一个update方法。
+
+
+
+四、JDBCTemplate操作数据库——查询返回某个值
+
+五、JDBCTemplate操作数据库——查询返回对象
+
+六、JDBCTemplate操作数据库——查询返回集合
+
+七、JDBCTemplate操作数据库——批量操作
+
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/05/21/Spring5%E2%80%94%E2%80%94AOP/" title="Spring5——AOP">     <img class="post_bg" src="https://pic.imgdb.cn/item/60a761c46ae4f77d355ad45a.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring5——AOP"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/21/Spring5%E2%80%94%E2%80%94AOP/" title="Spring5——AOP">Spring5——AOP</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-05-21T07:28:47.000Z" title="Created 2021-05-21 15:28:47">2021-05-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">Spring5——AOP一、AOP基本概念
+面向切面编程(方面)，利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发的效率。
+通俗描述：不通过修改源代码方式，在主干功能里面添加新功能。
+
+二、AOP底层原理
+AOP底层使用动态代理。
+动态代理分为两种情况：
+情况一：有接口情况，使用JDK动态代理；创建接口实现类代理对象，增强类的方法。
+情况二：没有接口情况，使用CGLIB动态代理；创建子类的代理对象，增强类的方法。
+
+
+
+三、AOP——JDK动态代理
+使用JDK动态代理，使用Proxy类里面的方法创建代理对象。
+
+调用newProxyInstance方法，方法有三个参数：public static Object newProxyInstance(ClassLoader loader, Class&lt;?&gt;[] interfaces, InvocationHandler h)：
+
+第一参数：类加载器。
+第二参数：增强方法所在的类，这个类实现的接口，支持多个接口。
+第三参数：实现这个接口InvocationHand ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/05/21/Spring5%E2%80%94%E2%80%94IOC%E5%AE%B9%E5%99%A8/" title="Spring5——IOC容器">     <img class="post_bg" src="https://pic.imgdb.cn/item/60a700d86ae4f77d35b69ee5.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring5——IOC容器"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/21/Spring5%E2%80%94%E2%80%94IOC%E5%AE%B9%E5%99%A8/" title="Spring5——IOC容器">Spring5——IOC容器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-05-21T00:33:26.000Z" title="Created 2021-05-21 08:33:26">2021-05-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">Spring5——IOC容器一、IOC容器基本概念
+什么是IOC(控制反转)？
+把对象创建和对象之间的调用过程，交给Spring进行管理。
+使用IOC目的：为了降低耦合度。
+
+
+IOC底层原理：xml解析、工厂模式、反射。
+
+二、IOC接口
+IOC思想基于IOC容器完成，IOC容器底层就是对象工厂。
+**Spring提供的IOC容器实现的两种方式(两个接口)**：
+BeanFactory接口：IOC容器基本实现是Spring内部接口的使用接口，不提供给开发人员进行使用(加载配置文件时候不会创建对象，在获取对象时才会创建对象)。
+ApplicationContext接口：BeanFactory接口的子接口，提供更多更强大的功能，提供给开发人员使用(加载配置文件时候就会把在配置文件对象进行创建)。
+
+
+
+
+
+
+FileSystemXmlApplicationContext：代表从src下的类路径查找。
+ClassPathXmlApplicationContext：代表从盘下的具体路径查找。
+ConfigurableApplicationContext：代表包含相关的扩展功能。
+
+三、IOC ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/05/20/JavaWeb%E2%80%94%E2%80%94JSTL%E6%A0%87%E7%AD%BE%E5%BA%93/" title="JavaWeb——JSTL标签库">     <img class="post_bg" src="https://pic.imgdb.cn/item/60a62daf6ae4f77d3574d6d5.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaWeb——JSTL标签库"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/20/JavaWeb%E2%80%94%E2%80%94JSTL%E6%A0%87%E7%AD%BE%E5%BA%93/" title="JavaWeb——JSTL标签库">JavaWeb——JSTL标签库</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-05-20T08:43:27.000Z" title="Created 2021-05-20 16:43:27">2021-05-20</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="content">一、JSTL标签库1. 基础知识
+JSTL标签库全称是指JSP Standard Tag Library JSP标准标签库。是一个不断完善的开放源代码的JSP标签库。 EL表达式主要是为了替换jsp中的表达式脚本，而标签库则是为了替换代码脚本。这样使得整个jsp页面变得更佳简洁。
+
+JSTL由五个不同功能的标签库组成。
+
+
+
+
+
+功能范围
+URI
+前缀
+
+
+
+核心标签库–重点
+http://java.sun.com/jsp/jstl/core
+c
+
+
+格式化
+http://java.sun.com/jsp/jstl/fmt
+fmt
+
+
+函数
+http://java.sun.com/jsp/jstl/functions
+fn
+
+
+数据库(不使用)
+http://java.sun.com/jsp/jstl/sql
+sql
+
+
+XML(不使用)
+http://java.sun.com/jsp/jstl/xml
+x
+
+
+2. JSTL标签库的使用步骤
+先导入JSTL的jar包。
+使用taglib指令引入标。
+
+
+
+3. set标签
+
+4. if标签
+
+5. choose标签
+6. forEac ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/#content-inner">7</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">69</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/12/hello-world/" title="Hello World"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2021/07/12/hello-world/" title="Hello World">Hello World</a><time datetime="2021-07-12T03:21:34.585Z" title="Created 2021-07-12 11:21:34">2021-07-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/07/%E9%9D%A2%E8%AF%95%E5%A4%8D%E4%B9%A0-Java%E8%99%9A%E6%8B%9F%E6%9C%BA-jvm/" title="[面试复习]Java虚拟机(jvm)"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="[面试复习]Java虚拟机(jvm)"/></a><div class="content"><a class="title" href="/2021/06/07/%E9%9D%A2%E8%AF%95%E5%A4%8D%E4%B9%A0-Java%E8%99%9A%E6%8B%9F%E6%9C%BA-jvm/" title="[面试复习]Java虚拟机(jvm)">[面试复习]Java虚拟机(jvm)</a><time datetime="2021-06-07T02:03:23.000Z" title="Created 2021-06-07 10:03:23">2021-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/31/%E4%BB%80%E4%B9%88%E6%98%AFBSD%E5%8D%8F%E8%AE%AE%EF%BC%9F/" title="什么是BSD协议？"><img src="https://pic.imgdb.cn/item/60b46f1139f6859bc20e2507.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="什么是BSD协议？"/></a><div class="content"><a class="title" href="/2021/05/31/%E4%BB%80%E4%B9%88%E6%98%AFBSD%E5%8D%8F%E8%AE%AE%EF%BC%9F/" title="什么是BSD协议？">什么是BSD协议？</a><time datetime="2021-05-31T05:07:11.000Z" title="Created 2021-05-31 13:07:11">2021-05-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/29/SSM%E2%80%94%E2%80%94SpringMVC-1/" title="SSM——SpringMVC(1)"><img src="https://pic.imgdb.cn/item/60b1767e08f74bc1596a7232.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SSM——SpringMVC(1)"/></a><div class="content"><a class="title" href="/2021/05/29/SSM%E2%80%94%E2%80%94SpringMVC-1/" title="SSM——SpringMVC(1)">SSM——SpringMVC(1)</a><time datetime="2021-05-28T22:59:42.000Z" title="Created 2021-05-29 06:59:42">2021-05-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/28/SSM%E2%80%94%E2%80%94Spring-2/" title="SSM——Spring(2)"><img src="https://pic.imgdb.cn/item/60b0aade08f74bc159eaa6ab.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SSM——Spring(2)"/></a><div class="content"><a class="title" href="/2021/05/28/SSM%E2%80%94%E2%80%94Spring-2/" title="SSM——Spring(2)">SSM——Spring(2)</a><time datetime="2021-05-28T06:10:47.000Z" title="Created 2021-05-28 14:10:47">2021-05-28</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Essay/"><span class="card-category-list-name">Essay</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%94%9F%E4%B9%9F%E6%9C%89%E6%B6%AF-%E6%84%9F%E6%82%9F/"><span class="card-category-list-name">生也有涯(感悟)</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">知也无涯(学习)</span><span class="card-category-list-count">65</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/AOP/" style="font-size: 1.1em; color: #999">AOP</a> <a href="/tags/Atcoder/" style="font-size: 1.1em; color: #999">Atcoder</a> <a href="/tags/Codeforces/" style="font-size: 1.3em; color: #99a1ac">Codeforces</a> <a href="/tags/EL%E8%A1%A8%E8%BE%BE%E5%BC%8F/" style="font-size: 1.1em; color: #999">EL表达式</a> <a href="/tags/Essay/" style="font-size: 1.1em; color: #999">Essay</a> <a href="/tags/Git/" style="font-size: 1.1em; color: #999">Git</a> <a href="/tags/HTML-CSS/" style="font-size: 1.1em; color: #999">HTML&&CSS</a> <a href="/tags/HTTP/" style="font-size: 1.1em; color: #999">HTTP</a> <a href="/tags/IOC%E5%AE%B9%E5%99%A8/" style="font-size: 1.1em; color: #999">IOC容器</a> <a href="/tags/JDBC/" style="font-size: 1.1em; color: #999">JDBC</a> <a href="/tags/JDBCTemplate/" style="font-size: 1.1em; color: #999">JDBCTemplate</a> <a href="/tags/JSON/" style="font-size: 1.1em; color: #999">JSON</a> <a href="/tags/JSTL%E6%A0%87%E7%AD%BE%E5%BA%93/" style="font-size: 1.1em; color: #999">JSTL标签库</a> <a href="/tags/JVM/" style="font-size: 1.1em; color: #999">JVM</a> <a href="/tags/Java/" style="font-size: 1.1em; color: #999">Java</a> <a href="/tags/JavaScript/" style="font-size: 1.1em; color: #999">JavaScript</a> <a href="/tags/JavaWeb/" style="font-size: 1.1em; color: #999">JavaWeb</a> <a href="/tags/LCS/" style="font-size: 1.1em; color: #999">LCS</a> <a href="/tags/LIS/" style="font-size: 1.1em; color: #999">LIS</a> <a href="/tags/Leetcode/" style="font-size: 1.5em; color: #99a9bf">Leetcode</a> <a href="/tags/Linux/" style="font-size: 1.1em; color: #999">Linux</a> <a href="/tags/Listener%E7%9B%91%E5%90%AC%E5%99%A8/" style="font-size: 1.1em; color: #999">Listener监听器</a> <a href="/tags/Maven/" style="font-size: 1.1em; color: #999">Maven</a> <a href="/tags/MyBatis/" style="font-size: 1.5em; color: #99a9bf">MyBatis</a> <a href="/tags/MySQL/" style="font-size: 1.5em; color: #99a9bf">MySQL</a> <a href="/tags/Poem/" style="font-size: 1.1em; color: #999">Poem</a> <a href="/tags/Servlet/" style="font-size: 1.1em; color: #999">Servlet</a> <a href="/tags/Spring5/" style="font-size: 1.3em; color: #99a1ac">Spring5</a> <a href="/tags/Spring5%E6%96%B0%E5%8A%9F%E8%83%BD/" style="font-size: 1.1em; color: #999">Spring5新功能</a> <a href="/tags/SpringBoot2/" style="font-size: 1.1em; color: #999">SpringBoot2</a> <a href="/tags/SpringMVC/" style="font-size: 1.1em; color: #999">SpringMVC</a> <a href="/tags/TCP-IP/" style="font-size: 1.1em; color: #999">TCP/IP</a> <a href="/tags/Tomcat/" style="font-size: 1.1em; color: #999">Tomcat</a> <a href="/tags/XML/" style="font-size: 1.1em; color: #999">XML</a> <a href="/tags/jQuery/" style="font-size: 1.1em; color: #999">jQuery</a> <a href="/tags/jsp/" style="font-size: 1.1em; color: #999">jsp</a> <a href="/tags/%E4%B8%89%E5%88%86/" style="font-size: 1.1em; color: #999">三分</a> <a href="/tags/%E4%BA%8B%E5%8A%A1%E6%93%8D%E4%BD%9C/" style="font-size: 1.1em; color: #999">事务操作</a> <a href="/tags/%E5%89%91%E6%8C%87Offer/" style="font-size: 1.1em; color: #999">剑指Offer</a> <a href="/tags/%E5%8C%BA%E9%97%B4DP/" style="font-size: 1.1em; color: #999">区间DP</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">July 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">June 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">May 2021</span><span class="card-archive-list-count">28</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/04/"><span class="card-archive-list-date">April 2021</span><span class="card-archive-list-count">31</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/03/"><span class="card-archive-list-date">March 2021</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">December 2020</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">69</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-07-12T15:58:25.495Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax src="https://cdn.jsdelivr.net/npm/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+                        function gitcalendar_injector_config(){
+                          var parent_div_git = document.getElementById('recent-posts');
+                          var item_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+                          parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+                          console.log('已挂载gitcalendar')
+                          }
+
+                        if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+                            gitcalendar_injector_config()
+                            GitCalendarInit("https://gitcalendar.akilar.top/api?fujang233",['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c'],'fujang233')
+                        }
+                      </script><!-- hexo injector body_end end --></body></html>

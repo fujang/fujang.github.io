@@ -1,0 +1,311 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JavaWeb——Tomcat | Hexo</title><meta name="keywords" content="Tomcat"><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="JavaWeb[尚硅谷] Summary for videos">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaWeb——Tomcat">
+<meta property="og:url" content="http://example.com/2021/04/24/JavaWeb%E2%80%94%E2%80%94Tomcat/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="JavaWeb[尚硅谷] Summary for videos">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ae01.alicdn.com/kf/U4f68794e0013467c8672e0dc12402de4b.jpg">
+<meta property="article:published_time" content="2021-04-24T07:46:46.000Z">
+<meta property="article:modified_time" content="2021-05-19T03:08:37.715Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Tomcat">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ae01.alicdn.com/kf/U4f68794e0013467c8672e0dc12402de4b.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2021/04/24/JavaWeb%E2%80%94%E2%80%94Tomcat/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'JavaWeb——Tomcat',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-05-19 11:08:37'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/style.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-filter-gitcalendar/lib/gitcalendar.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">69</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> Archives</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Timeline</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-bars"></i><span> Literature</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fa fa-tasks"></i><span> Anime</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://ae01.alicdn.com/kf/U78919e76605248dd90287b2a78a8bb81C.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> Archives</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Timeline</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-bars"></i><span> Literature</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fa fa-tasks"></i><span> Anime</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">JavaWeb——Tomcat</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-04-24T07:46:46.000Z" title="Created 2021-04-24 15:46:46">2021-04-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-05-19T03:08:37.715Z" title="Updated 2021-05-19 11:08:37">2021-05-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%9F%A5%E4%B9%9F%E6%97%A0%E6%B6%AF-%E5%AD%A6%E4%B9%A0/">知也无涯(学习)</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="JavaWeb——Tomcat"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="一、Tomcat"><a href="#一、Tomcat" class="headerlink" title="一、Tomcat"></a>一、Tomcat</h1><h2 id="1-JavaWeb的概念"><a href="#1-JavaWeb的概念" class="headerlink" title="1. JavaWeb的概念"></a>1. JavaWeb的概念</h2><ul>
+<li>JavaWeb是指，所有通过Java语言编写可以通过浏览器访问的程序的总称，叫 JavaWeb。JavaWeb是基于请求和响应来开发的。</li>
+<li>请求是指客户端给服务器发送数据，叫请求Request。</li>
+<li>响应是指服务器给客户端回传数据，叫响应Response。</li>
+<li>响应是指服务器给客户端回传数据，叫响应Response。</li>
+</ul>
+<h2 id="2-Web资源的分类"><a href="#2-Web资源的分类" class="headerlink" title="2. Web资源的分类"></a>2. Web资源的分类</h2><ul>
+<li>web资源按实现的技术和呈现的效果的不同，又分为静态资源和动态资源两种。</li>
+<li>静态资源：html、css、js、txt、mp4视频、jpg图片。</li>
+<li>动态资源：jsp页面、Servlet程序。</li>
+</ul>
+<h2 id="3-常见的Web服务器"><a href="#3-常见的Web服务器" class="headerlink" title="3. 常见的Web服务器"></a>3. 常见的Web服务器</h2><ol>
+<li>Tomcat：由Apache组织提供的一种Web服务器，提供对jsp和Servlet的支持。它是一种轻量级的javaWeb容器(服务器)，也是当前应用最广的JavaWeb服务器(免费)。</li>
+<li>Jboss：是一个遵从JavaEE规范的、开放源代码的、纯Java的EJB服务器，它支持所有的JavaEE规范。</li>
+<li>Resin：是CAUCHO公司的产品，是一个非常流行的服务器，对servlet和JSP提供了良好的支持，性能也比较优良，resin自身采用JAVA语言开发(收费，应用比较多)。</li>
+<li>WebLogic：是Oracle公司的产品，是目前应用最广泛的Web服务器，支持JavaEE规范，而且不断的完善以适应新的开发要求，适合大型项目(收费，用的不多，适合大公司)。</li>
+</ol>
+<h2 id="4-Tomcat服务器和Servlet版本的对应关系"><a href="#4-Tomcat服务器和Servlet版本的对应关系" class="headerlink" title="4. Tomcat服务器和Servlet版本的对应关系"></a>4. Tomcat服务器和Servlet版本的对应关系</h2><ul>
+<li>当前企业常用的版本：7、8。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Tomcat版本</th>
+<th>Servlet/JSP版本</th>
+<th>JavaEE版本</th>
+<th>运行环境</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>4.1</td>
+<td>2.3/1.2</td>
+<td>1.3</td>
+<td>JDK1.3</td>
+</tr>
+<tr>
+<td>5.0</td>
+<td>2.4/2.0</td>
+<td>1.4</td>
+<td>JDK1.4</td>
+</tr>
+<tr>
+<td>5.5/6.0</td>
+<td>2.5/2.1</td>
+<td>5.0</td>
+<td>JDK5.0</td>
+</tr>
+<tr>
+<td>7.0</td>
+<td>3.0/2.2</td>
+<td>6.0</td>
+<td>JDK6.0</td>
+</tr>
+<tr>
+<td>8.0</td>
+<td>3.1/2.3</td>
+<td>7.0</td>
+<td>JDK7.0</td>
+</tr>
+</tbody></table>
+<h2 id="5-Tomcat的使用"><a href="#5-Tomcat的使用" class="headerlink" title="5. Tomcat的使用"></a>5. Tomcat的使用</h2><h3 id="5-1-目录介绍"><a href="#5-1-目录介绍" class="headerlink" title="5.1 目录介绍"></a>5.1 目录介绍</h3><ul>
+<li>bin专门用来存放Tomcat服务器的可执行程序。</li>
+<li>conf专门用来存放Tocmat服务器的配置文件。</li>
+<li>lib专门用来存放Tomcat服务器的jar包。</li>
+<li>logs专门用来存放Tomcat服务器运行时输出的日记信息。</li>
+<li>temp专门用来存放Tomcdat运行时产生的临时数据。</li>
+<li>webapps专门用来存放部署的Web工程。</li>
+<li>work是Tomcat工作时的目录，用来存放Tomcat运行时jsp翻译为Servlet的源码，和Session钝化的目录。</li>
+</ul>
+<h3 id="5-2-启动Tomcat服务器"><a href="#5-2-启动Tomcat服务器" class="headerlink" title="5.2 启动Tomcat服务器"></a>5.2 启动Tomcat服务器</h3><ul>
+<li>找到Tomcat目录下的bin目录下的startup.bat文件，双击，就可以启动Tomcat服务器。</li>
+<li>如何测试Tomcat服务器启动成功？<ul>
+<li><code>http://localhost:8080</code></li>
+<li><code>http://127.0.0.1:8080</code></li>
+<li><code>http://真实ip:8080</code></li>
+</ul>
+</li>
+<li>正常启动需要配置JAVA_HOME环境变量。</li>
+</ul>
+<h3 id="5-3-另一种启动tomcat服务器的方法"><a href="#5-3-另一种启动tomcat服务器的方法" class="headerlink" title="5.3 另一种启动tomcat服务器的方法"></a>5.3 另一种启动tomcat服务器的方法</h3><ol>
+<li>打开命令行。</li>
+<li>cd到你的Tomcat的bin目录下。</li>
+<li>敲入启动命令：<code>catalina run</code>。</li>
+</ol>
+<h3 id="5-4-Tomcat的停止"><a href="#5-4-Tomcat的停止" class="headerlink" title="5.4 Tomcat的停止"></a>5.4 Tomcat的停止</h3><ol>
+<li>点击tomcat服务器窗口的x关闭按钮。</li>
+<li>把Tomcat服务器窗口置为当前窗口，然后按快捷键<code>Ctrl+C</code>。</li>
+<li>找到Tomcat的bin目录下的shutdown.bat双击，就可以停止Tomcat服务器。</li>
+</ol>
+<h3 id="5-5-如何修改Tomcat的端口号"><a href="#5-5-如何修改Tomcat的端口号" class="headerlink" title="5.5 如何修改Tomcat的端口号"></a>5.5 如何修改Tomcat的端口号</h3><ul>
+<li>Mysql默认的端口号是：3306。</li>
+<li>Tomcat默认的端口号是：8080。</li>
+<li>HTTP协议默认的端口号是：80。</li>
+<li>找到Tomcat目录下的conf目录，找到server.xml配置文件。</li>
+</ul>
+<img src="https://ae01.alicdn.com/kf/U0defb5726cc14454831695581d7e929cd.jpg" style="zoom:67%;" />
+
+<ul>
+<li>端口号范围为1到65535，修改完端口号后，一定要重启Tomcat服务器才能生效。</li>
+</ul>
+<h3 id="5-6-如何部暑web工程到Tomcat"><a href="#5-6-如何部暑web工程到Tomcat" class="headerlink" title="5.6 如何部暑web工程到Tomcat"></a>5.6 如何部暑web工程到Tomcat</h3><ol>
+<li><p>第一种方法：只需要把web工程的目录拷贝到Tomcat的webapps目录下即可。只需要在浏览器中输入访问地址格式如下：<code>http://ip:port/工程名/目录下/文件名</code>即可访问web工程。</p>
+</li>
+<li><p>第二种方法：</p>
+<ul>
+<li>找到Tomcat下的<code>conf目录\Catalina\localhost\</code>下,创建如下的配置文件：<code>abc.xml</code>，代表abc工程。</li>
+<li><code>abc.xml</code>的配置如下。</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Context 表示一个工程上下文</span></span><br><span class="line"><span class="comment">path 表示工程的访问路径:/abc</span></span><br><span class="line"><span class="comment">docBase 表示你的工程目录在哪里</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">Context</span> <span class="attr">path</span>=<span class="string">&quot;/abc&quot;</span> <span class="attr">docBase</span>=<span class="string">&quot;E:\book&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>访问这个工程的路径<code>http://ip:port/abc/</code>就表示访问<code>E:\book</code>目录。</li>
+</ul>
+</li>
+</ol>
+<h3 id="5-7-手托HTML页面到浏览器和在浏览器中输入IP地址访问的区别"><a href="#5-7-手托HTML页面到浏览器和在浏览器中输入IP地址访问的区别" class="headerlink" title="5.7 手托HTML页面到浏览器和在浏览器中输入IP地址访问的区别"></a>5.7 手托HTML页面到浏览器和在浏览器中输入IP地址访问的区别</h3><ul>
+<li>背后的协议不同，一个是file协议，一个是http协议。</li>
+</ul>
+<h3 id="5-8-ROOT的工程的访问，以及默认index-html页面的访问"><a href="#5-8-ROOT的工程的访问，以及默认index-html页面的访问" class="headerlink" title="5.8 ROOT的工程的访问，以及默认index.html页面的访问"></a>5.8 ROOT的工程的访问，以及默认index.html页面的访问</h3><ul>
+<li>当我们在浏览器地址栏中输入访问地址如下：<code>http://ip:port/</code>，没有工程名的时候，默认访问的是ROOT工程。 </li>
+<li>当我们在浏览器地址栏中输入的访问地址如下：<code>http://ip:port/工程名/</code>，没有资源名，默认访问<code>index.html</code>页面。</li>
+</ul>
+<h2 id="6-IDEA整合Tomcat服务器"><a href="#6-IDEA整合Tomcat服务器" class="headerlink" title="6. IDEA整合Tomcat服务器"></a>6. IDEA整合Tomcat服务器</h2><ul>
+<li><p>操作的菜单如下：<code>File|Settings，Build,Execution,Deployment|ApplicationServers</code>。</p>
+</li>
+<li><p>配置你的Tomcat安装目录。</p>
+</li>
+<li><p>通过创建一个Model查看是不是配置成功。</p>
+</li>
+</ul>
+<h2 id="7-IDEA中动态web工程"><a href="#7-IDEA中动态web工程" class="headerlink" title="7. IDEA中动态web工程"></a>7. IDEA中动态web工程</h2><img src="https://ae01.alicdn.com/kf/Ud335dad4d7c74cff9151c15a0daaff61c.jpg" style="zoom:80%;" />
+
+<img src="https://ae01.alicdn.com/kf/Uc6f51691d79c49a79b6ffa8ca04459f57.jpg" style="zoom: 80%;" />
+
+<img src="https://ae01.alicdn.com/kf/U489d6e78b3764939b2cbd06936680b15C.jpg" style="zoom:80%;" />
+
+<p><img src="https://ae01.alicdn.com/kf/Ub9f25895665c4cb4b982d406c260e6ddZ.jpg"></p>
+<h2 id="8-如何给动态web工程添加额外jar包"><a href="#8-如何给动态web工程添加额外jar包" class="headerlink" title="8. 如何给动态web工程添加额外jar包"></a>8. 如何给动态web工程添加额外jar包</h2><p><img src="https://ae01.alicdn.com/kf/U780fc2535168440095f02b3075132122O.jpg"></p>
+<p><img src="https://ae01.alicdn.com/kf/U91583d45c2004e5db795f9ace9a2fdcdD.jpg"></p>
+<p><img src="https://ae01.alicdn.com/kf/Uf96ca926af544632873f1ca271dbce0be.jpg"></p>
+<p><img src="https://ae01.alicdn.com/kf/Ucc12428048994924841f9692fab2d083K.jpg"></p>
+<h2 id="9-如何在IDEA中部署工程到Tomcat上运行"><a href="#9-如何在IDEA中部署工程到Tomcat上运行" class="headerlink" title="9. 如何在IDEA中部署工程到Tomcat上运行"></a>9. 如何在IDEA中部署工程到Tomcat上运行</h2><p><img src="https://ae01.alicdn.com/kf/U34316bf5889040838469cb425720ebb4q.jpg"></p>
+<p><img src="https://ae01.alicdn.com/kf/U15130a759dc0410d990dfbb0c318fa07J.jpg"></p>
+<p><img src="https://ae01.alicdn.com/kf/U18e4183302a94007b8513a44870b94db8.jpg"></p>
+<p><img src="https://ae01.alicdn.com/kf/Uce6f11990125429e9aae5e429e598117c.jpg"></p>
+<p><img src="https://ae01.alicdn.com/kf/Uc07ef1ba2b934e7690db662e73f668d7r.jpg"></p>
+<p><img src="https://ae01.alicdn.com/kf/U597222d44f9d400b8e0c284b9a7c5592h.jpg"></p>
+<p><img src="https://ae01.alicdn.com/kf/U55be3e9154924a2194e9a94fe90689aaf.jpg"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2021/04/24/JavaWeb%E2%80%94%E2%80%94Tomcat/">http://example.com/2021/04/24/JavaWeb%E2%80%94%E2%80%94Tomcat/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Tomcat/">Tomcat</a></div><div class="post_share"><div class="social-share" data-image="https://ae01.alicdn.com/kf/U4f68794e0013467c8672e0dc12402de4b.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/04/24/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/"><img class="prev-cover" src="https://ae01.alicdn.com/kf/Ucb889b3d69444fada7ab02e47ab88fd3Z.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">快速排序</div></div></a></div><div class="next-post pull-right"><a href="/2021/04/23/JavaWeb%E2%80%94%E2%80%94XML/"><img class="next-cover" src="https://ae01.alicdn.com/kf/U3d30d462dfd248da8a8dc92f173ec0ebB.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">JavaWeb——XML</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">69</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">53</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81Tomcat"><span class="toc-text">一、Tomcat</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-JavaWeb%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-text">1. JavaWeb的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Web%E8%B5%84%E6%BA%90%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-text">2. Web资源的分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%B8%B8%E8%A7%81%E7%9A%84Web%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">3. 常见的Web服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%92%8CServlet%E7%89%88%E6%9C%AC%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB"><span class="toc-text">4. Tomcat服务器和Servlet版本的对应关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-Tomcat%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">5. Tomcat的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E7%9B%AE%E5%BD%95%E4%BB%8B%E7%BB%8D"><span class="toc-text">5.1 目录介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-%E5%90%AF%E5%8A%A8Tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">5.2 启动Tomcat服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-%E5%8F%A6%E4%B8%80%E7%A7%8D%E5%90%AF%E5%8A%A8tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-text">5.3 另一种启动tomcat服务器的方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-4-Tomcat%E7%9A%84%E5%81%9C%E6%AD%A2"><span class="toc-text">5.4 Tomcat的停止</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5-%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9Tomcat%E7%9A%84%E7%AB%AF%E5%8F%A3%E5%8F%B7"><span class="toc-text">5.5 如何修改Tomcat的端口号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-6-%E5%A6%82%E4%BD%95%E9%83%A8%E6%9A%91web%E5%B7%A5%E7%A8%8B%E5%88%B0Tomcat"><span class="toc-text">5.6 如何部暑web工程到Tomcat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-7-%E6%89%8B%E6%89%98HTML%E9%A1%B5%E9%9D%A2%E5%88%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%92%8C%E5%9C%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E8%BE%93%E5%85%A5IP%E5%9C%B0%E5%9D%80%E8%AE%BF%E9%97%AE%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">5.7 手托HTML页面到浏览器和在浏览器中输入IP地址访问的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-8-ROOT%E7%9A%84%E5%B7%A5%E7%A8%8B%E7%9A%84%E8%AE%BF%E9%97%AE%EF%BC%8C%E4%BB%A5%E5%8F%8A%E9%BB%98%E8%AE%A4index-html%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%AE%BF%E9%97%AE"><span class="toc-text">5.8 ROOT的工程的访问，以及默认index.html页面的访问</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-IDEA%E6%95%B4%E5%90%88Tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">6. IDEA整合Tomcat服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-IDEA%E4%B8%AD%E5%8A%A8%E6%80%81web%E5%B7%A5%E7%A8%8B"><span class="toc-text">7. IDEA中动态web工程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E5%A6%82%E4%BD%95%E7%BB%99%E5%8A%A8%E6%80%81web%E5%B7%A5%E7%A8%8B%E6%B7%BB%E5%8A%A0%E9%A2%9D%E5%A4%96jar%E5%8C%85"><span class="toc-text">8. 如何给动态web工程添加额外jar包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E5%A6%82%E4%BD%95%E5%9C%A8IDEA%E4%B8%AD%E9%83%A8%E7%BD%B2%E5%B7%A5%E7%A8%8B%E5%88%B0Tomcat%E4%B8%8A%E8%BF%90%E8%A1%8C"><span class="toc-text">9. 如何在IDEA中部署工程到Tomcat上运行</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/12/hello-world/" title="Hello World"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2021/07/12/hello-world/" title="Hello World">Hello World</a><time datetime="2021-07-12T03:21:34.585Z" title="Created 2021-07-12 11:21:34">2021-07-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/07/%E9%9D%A2%E8%AF%95%E5%A4%8D%E4%B9%A0-Java%E8%99%9A%E6%8B%9F%E6%9C%BA-jvm/" title="[面试复习]Java虚拟机(jvm)"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="[面试复习]Java虚拟机(jvm)"/></a><div class="content"><a class="title" href="/2021/06/07/%E9%9D%A2%E8%AF%95%E5%A4%8D%E4%B9%A0-Java%E8%99%9A%E6%8B%9F%E6%9C%BA-jvm/" title="[面试复习]Java虚拟机(jvm)">[面试复习]Java虚拟机(jvm)</a><time datetime="2021-06-07T02:03:23.000Z" title="Created 2021-06-07 10:03:23">2021-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/31/%E4%BB%80%E4%B9%88%E6%98%AFBSD%E5%8D%8F%E8%AE%AE%EF%BC%9F/" title="什么是BSD协议？"><img src="https://pic.imgdb.cn/item/60b46f1139f6859bc20e2507.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="什么是BSD协议？"/></a><div class="content"><a class="title" href="/2021/05/31/%E4%BB%80%E4%B9%88%E6%98%AFBSD%E5%8D%8F%E8%AE%AE%EF%BC%9F/" title="什么是BSD协议？">什么是BSD协议？</a><time datetime="2021-05-31T05:07:11.000Z" title="Created 2021-05-31 13:07:11">2021-05-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/29/SSM%E2%80%94%E2%80%94SpringMVC-1/" title="SSM——SpringMVC(1)"><img src="https://pic.imgdb.cn/item/60b1767e08f74bc1596a7232.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SSM——SpringMVC(1)"/></a><div class="content"><a class="title" href="/2021/05/29/SSM%E2%80%94%E2%80%94SpringMVC-1/" title="SSM——SpringMVC(1)">SSM——SpringMVC(1)</a><time datetime="2021-05-28T22:59:42.000Z" title="Created 2021-05-29 06:59:42">2021-05-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/05/28/SSM%E2%80%94%E2%80%94Spring-2/" title="SSM——Spring(2)"><img src="https://pic.imgdb.cn/item/60b0aade08f74bc159eaa6ab.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SSM——Spring(2)"/></a><div class="content"><a class="title" href="/2021/05/28/SSM%E2%80%94%E2%80%94Spring-2/" title="SSM——Spring(2)">SSM——Spring(2)</a><time datetime="2021-05-28T06:10:47.000Z" title="Created 2021-05-28 14:10:47">2021-05-28</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax src="https://cdn.jsdelivr.net/npm/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+                        function gitcalendar_injector_config(){
+                          var parent_div_git = document.getElementById('recent-posts');
+                          var item_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+                          parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+                          console.log('已挂载gitcalendar')
+                          }
+
+                        if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+                            gitcalendar_injector_config()
+                            GitCalendarInit("https://gitcalendar.akilar.top/api?fujang233",['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c'],'fujang233')
+                        }
+                      </script><!-- hexo injector body_end end --></body></html>
